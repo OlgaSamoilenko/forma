@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <figure>
+                <figcaption>Listen to the T-Rex:</figcaption>
+                <audio controls src="/media/klava.mp3"></audio>
+                <a  href="/media/klava.mp3" download> Download audio </a>
+              </figure>
+              
+        </div>
+    </section>
+    <section>
+        <div class="container">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input type="text" required maxlength="5" placeholder="введите текст">
+            <input type="number" min="0" max="10">
+            <input type="email">
+            <input type="tel">
+            <input type="password" >
+            <input type="date">
+            <input type="search">
+            <input type="file" accept="image/*" >
+            <input type="hidden" name="">
+            <button type="submit">отправить</button>
+           
+        </form>
+        <div class="radio">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset>
+                <legend>Выбор пола</legend>
+                <label for="">
+                    <input type="radio" name="gender" value="м"> М
+                </label>
+                    <input type="radio" name="gender" value="Ж" checked> Ж
+                    <textarea name="massage" placeholder="введите текст" ></textarea>
+                    <select name="city">
+                        <option value="Мурманск">Мурманск</option>
+                        <option value="Омск">Омск</option>
+                        <option value="Томск" disabled>Томск</option>
+                    </select>
+
+            </fieldset>
+          
+        </form>
+        <button type="submit">ОТПРАВИТЬ</button>
+    </div>
+    </div>
+    </section>
+
+    <section class="join-us">
+        <div class="container">
+            <h2 class="section-title join-us-title">Join us</h2>
+            <p class="section-descr join-us-descr">Take control of your paid subscription today!</p>
+       
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+            <div class="form-top">
+                <div class="form-left">
+                    <input class="form-input" type="text" name="name" placeholder="Name" required>
+                    <input class="form-input" type="email" name="email" placeholder="E-mail" required>
+                    <input class="form-input" type="tel" name="phone" placeholder="Phone" required>
+                    <select class="form-select" name="country">
+                        <option class="form-inp" value="Country" disabled selected>Country</option>
+                        <option value="United Kindom">United Kindom</option>
+                        <option value="United States">United States</option>
+                        <option value="France">France</option>
+                        <option value="German">German</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Estonia">Estonia</option>
+                    </select>
+                </div>
+                <div class="form-right">
+                    <textarea class="form-textarea" name="comment" placeholder="Comment"></textarea>
+                </div>
+            </div>
+            <div class="form-botton">
+                <div class="form-wrapper">
+                   <button class="btn">GET STARTED</button>
+                    <label class="form-check">
+                    <input type="checkbox" required>
+                    I agree with the <a href="#">user name</a>
+                    </label>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    
+</body>
+</html>
